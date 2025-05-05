@@ -1,3 +1,7 @@
+*{
+  padding:0;
+  margin:0;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,495 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.Nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("https://media.istockphoto.com/id/494635982/photo/milky-way-and-stars-at-atacama-desert.jpg?s=612x612&w=0&k=20&c=s1eH0lHSbhhjPrszyAHhIUVKMuqodsAtXdXPg5pR9-E=");
+  border-radius:5px;
+  color:white;
+  margin-bottom:0;
+  padding-bottom:0;
+  position:fixed;
+  z-index:1000;
+  width:100vw;
+  height:15vh;
+  
+}
+#logo-image{
+ width:15vw;
+ padding-right:3vw;
+}
+#logo{
+  display: flex;
+  align-items: center;
+  padding-right: 3vw;
+  
+} 
+.nav-links{
+  display:flex;
+  padding:3vw;
+  a{
+    
+    text-decoration: none;
+  }
+  button{
+    border-radius:5px;
+    margin-right:3vw;
+    background-color:#00FFFF;
+    padding:5px 9px 5px 9px;
+  }
+}
+#home{
+  padding-top:0;
+  margin-top:0;
+  
+  /* background-image:url("https://media.istockphoto.com/id/177512311/photo/space-background-stars-universe-galaxy-and-nebula.jpg?s=612x612&w=0&k=20&c=Fo9pcwfjUjr2WcBuNPwvjs2zRnXk0xVSQLkhW4JmXlY=");
+  background-size: cover; */
+  /* color:white; */
+}
+
+#login {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 30%;
+}
+
+#login h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+#login input {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #00ffff;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+#login button {
+  background-color: #00ffff;
+  color: black;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+#login button:hover {
+  background-color: #008b8b;
+}
+
+#login p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#login a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.login-container {
+  height: 100vh;
+  background-image: url("https://media.istockphoto.com/id/494635982/photo/milky-way-and-stars-at-atacama-desert.jpg?s=612x612&w=0&k=20&c=s1eH0lHSbhhjPrszyAHhIUVKMuqodsAtXdXPg5pR9-E=");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-container {
+  background-image: url("https://images.unsplash.com/photo-1519125323398-675f0ddb6308");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh - 15vh); /* Full viewport height minus navbar height */
+  padding: 2rem;
+  display: flex;
+  position:relative;
+  top:15vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.schedule-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.schedule-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: calc(33.333% - 2rem); /* Three cards per row */
+  max-width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schedule-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+.schedule-card h2 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.schedule-card p {
+  font-size: 1rem;
+  margin: 0.3rem 0;
+}
+
+@media (max-width: 1024px) {
+  .schedule-card {
+    width: calc(50% - 2rem); /* Two cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule-card {
+    width: calc(100% - 2rem); /* One card per row */
+  }
+
+  .schedule-container {
+    padding: 1rem;
+  }
+}
+
+#day0{
+  background-image:url("https://thumbs.dreamstime.com/b/spaceman-flying-board-mixed-media-astronaut-futuristic-rocket-skateboard-elements-image-furnished-nasa-101099378.jpg");
+  background-size: cover;
+  color:white;
+  position:relative;
+  display:inline-block;
+  top:17vh;
+  left:4vw;
+  min-width:40vw;
+  min-height:40vh;
+  border-radius:10px;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+
+}
+#day1{
+  background-image:url("https://cdn.pixabay.com/photo/2023/06/13/15/05/astronaut-8061095_640.png");
+  background-size: cover;
+  color:white;
+  position:relative;
+  display:inline-block;
+  top:60vh;
+  left:15vw;
+  min-width:40vw;
+  min-height:40vh;
+  border-radius:10px;
+  box-shadow: -10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+#day2{
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/9/91/Bruce_McCandless_II_during_EVA_in_1984.jpg");
+  background-size: cover;
+  color:white;
+  position:relative;
+  display:inline-block;
+  top:65vh;
+  left:4vw;
+  min-width:40vw;
+  min-height:40vh;
+  border-radius:10px;
+  padding-bottom:5vh;
+  z-index:100;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:579px){
+  #day1{
+    top:20vh;
+    left:20vw;
+  }
+  #day2{
+    top:23vh;
+  }
+}
+@media(min-width:576px)and (max-width:680px){
+  #day1{
+    left:8vw;
+  }
+}
+#hamburger-icon{
+  position:relative;
+  right:7vw;
+  display:none;
+  font-size:1.5rem;
+}
+
+#hamburger{
+  display:flex;
+  position:fixed;
+  display:none;
+  top:10vh;
+  right:2vw;
+  z-index:3000;
+  flex-direction:column;
+  color:aqua;
+  border-radius:5px;
+    border-style:solid;
+    border-color:white;
+    border-width:2px;
+}
+ @media(max-width:700px){
+  /* #hamburger{
+    display:block;
+  } */
+  #hamburger-icon{
+    display:block;
+  }
+  .nav-links{
+    display:none;
+  }
+
+  .bar:hover{
+    border-radius:5px;
+    border-style:solid;
+    border-color:white;
+    border-width:2px;
+  }
+} 
+
+#signupcont{
+  height:100vh;
+  background-image:url("https://media.istockphoto.com/id/494635982/photo/milky-way-and-stars-at-atacama-desert.jpg?s=612x612&w=0&k=20&c=s1eH0lHSbhhjPrszyAHhIUVKMuqodsAtXdXPg5pR9-E=");
+   background-size: cover;
+}
+#signup{
+  display:flex;
+  flex-direction:column;
+  background-color:rgba(0, 0, 0, 0.5);
+  width:40vw;
+  height:40vh;
+  border-radius:10px;
+  color:white;
+  position:relative;
+  justify-content: space-around;
+  background-image:url("https://static.vecteezy.com/system/resources/thumbnails/028/771/235/small/detailed-and-realistic-representation-of-an-alien-life-form-set-within-the-confines-of-an-alien-landscape-ai-generative-photo.jpg");
+  background-size: cover;
+  top:30vh;
+  left:30vw;
+  align-items:center;
+  input{
+    width:70%;
+   margin-bottom:2vh;
+   height:30px;
+  }
+  h2{
+    margin-bottom:2vh;
+    color:white;
+  }
+  a{
+    color:white;
+    cursor: pointer;
+  }
+  button{
+    cursor: pointer;
+  }
+}
+.teams-container{
+  h2{
+    color:white;
+    text-align: center;
+  }
+  position:relative;
+  top:15vh;
+  min-height:80vh;
+  a{
+    text-decoration: none;
+    margin-bottom:3vh;
+    border-width:2px;
+  }
+  h2{
+    text-align: center;
+  }
+  background-image:url("https://img.freepik.com/free-photo/beautiful-shining-stars-night-sky_181624-622.jpg?semt=ais_hybrid&w=740");
+}
+.teams-container a:hover{
+  border:#00FFFF solid 2px;
+  border-radius:5px;
+}
+.heads{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  padding-top:5vh;
+}
+.team-card{
+  display:flex;
+  flex-direction: column;
+  align-items: center ;
+  border-style:solid;
+  border-color:white;
+  border-width:2px;
+  color:white;
+  border-radius:10px;
+  background-color:rgba(0, 0, 0, 0.5);
+  h3{
+    text-align: center;
+    padding-bottom:5px;
+  }
+  min-width:17vw;
+
+}
+.icons{
+  width:30%;
+  display:flex;
+  justify-content: space-around;
+  a{
+    border-width:2px;
+    color:white;
+  }
+}
+
+.img{
+  width:17vw;
+  height:40vh;
+  padding-left:2vw;
+  padding-right:2vw;
+  padding-top:3vh;
+  img{
+    width:100%;
+    height:100%;
+  }
+}
+.tech-team{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  padding-top:5vh;
+}
+.design-team{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  padding-top:5vh;
+}
+.Management-team{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  padding-top:5vh;
+}
+
+.profile-container {
+  height: 85vh;
+  position:relative;
+  top:15vh;
+  background-image: url("https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-card {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 50%;
+}
+
+.profile-card h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+.profile-card div {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  border: 1px solid #00ffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#logout-but{
+  display:none;
+}
+
+.home-container {
+  position:relative;
+  top:15vh;
+  height: calc(100vh - 15vh); /* Full viewport height minus navbar height */
+  background-image: url("https://images.unsplash.com/photo-1519125323398-675f0ddb6308");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.home-content {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.explore-button {
+  background-color: #00ffff;
+  color: black;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.explore-button:hover {
+  background-color: #008b8b;
 }
